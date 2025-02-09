@@ -1,0 +1,470 @@
+/* Reset básico */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+    padding: 1em 2%;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+    padding: 2%;
+}
+
+.logo-img {
+    height: auto;
+    width: 100%;
+    max-width: 120px;
+    border-radius: 20px;
+}
+
+/* Topo */
+.topo {
+    flex: 2;
+    text-align: center;
+    color: #333;
+    font-family: "Pacifico", cursive;
+}
+
+.topo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.topo p {
+    margin: 0.5em 0 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Menu */
+.menu {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+/* Botões */
+.botões {
+    flex: 2;
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+    font-family: "Pacifico", cursive;
+}
+
+.botão {
+    text-decoration: none;
+    color: white;
+    background-color: #4b3b28;
+    padding: 0.8em 2em;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.botão2 {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Seção Quem Somos */
+.Quem-somos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    background-color: rgb(21, 21, 65);
+    color: #fff;
+    margin: 5% auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+}
+.Quem-somos-bloco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(21, 21, 65);
+    color: #ffffff;
+    max-width: 200px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.coteudo {
+    flex: 2;
+    padding: 2%;
+}
+
+.coteudo h1 {
+    font-size: 2rem;
+}
+
+.coteudo p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+    padding: 2%;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Seção Escolha */
+.escolha {
+    background-color: rgb(21, 21, 65);
+    padding: 5% 2%;
+    text-align: center;
+    color: #fff;
+    margin: 5% auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.escolha h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.escolha-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.services-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(21, 21, 65);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Coloca os elementos um abaixo do outro */
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 8px;
+    
+}
+
+
+.services-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .service {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+  }
+  
+  
+  .service img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .service p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #222;
+  }
+ 
+
+
+.loca {
+    flex:2;
+    display: flex;
+    margin: 0 10px;
+    align-items:flex-end;
+    gap: 10px;
+    justify-content: flex-end;
+}
+  
+  .escolha-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .imagem {
+    background-color: rgb(135, 116, 243);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .imagem img {
+    width: 100%;
+    margin-bottom: 15px;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .imagem h3 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .imagem p {
+    font-size: 14px;
+    color:black;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu a {
+        font-size: 1.5rem;
+    }
+
+    .botões {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .coteudo h1 {
+        font-size: 1.8rem;
+    }
+
+    .coteudo p {
+        font-size: 1rem;
+    }
+
+    .Quem-somos {
+        flex-direction: column;
+    }
+    .services {
+        flex-direction: column;
+    }
+}
+
+/* Smartphones (até 480px) */
+@media (max-width: 480px) {
+    .header {
+        padding: 1em 5%;
+    }
+
+    .logo-img {
+        max-width: 80px;
+    }
+
+    .topo h1 {
+        font-size: 1.5rem;
+    }
+
+    .topo p {
+        font-size: 0.9rem;
+    }
+
+    .menu ul {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .menu a {
+        font-size: 1.2rem;
+    }
+
+    .botões {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .coteudo h1 {
+        font-size: 1.5rem;
+    }
+
+    .escolha h2 {
+        font-size: 1.8rem;
+    }
+
+    .escolha-container {
+        flex-direction: column;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+}
+/* Footer Original */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes nas colunas do footer para dispositivos móveis */
+.footer .contact,
+.footer .localizacao {
+    flex: 1;
+    margin: 0 10px;
+    align-items: flex-end;
+}
+
+/* Ícones de redes sociais */
+.footer .icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer .icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsividade: Footer em telas pequenas */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .contact,
+    .footer .localizacao {
+        flex: 1;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .footer .icons {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .footer .contact p,
+    .footer .localizacao p {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade: Ajuste de layout para telas menores que 480px */
+@media (max-width: 480px) {
+    .footer .contact p,
+    .footer .localizacao p {
+        font-size: 12px;
+    }
+
+    .footer .icons {
+        gap: 8px;
+    }
+
+    .footer .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Footer - Bloco de localização */
+.footer .roda {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.footer .roda h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer .roda p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
